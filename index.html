@@ -78,22 +78,24 @@
       text-decoration: underline;
     }
 
-    /* fixed navigation bar */ <!--does this need to go in my css?-->
-    .topnav {
-    		overflow: hidden;
-    		background-color: #ffffff;
-    		position: fixed;
-    		top: 0;
-    		width: 100%;
-    		}
+    /* fixed navigation bar */
+    < !--does this need to go in my css?-->.topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
     /* links inside the navbar */
-    		.topnav a {float:right;
-    		display: block;
-    		color: #424453;
-    		text-align: center;
-    		padding: 14px 16px;
-    		text-decoration: none
-    		}
+    .topnav a {
+      float: right;
+      display: block;
+      color: #424453;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none
+    }
 
 
     .topnav {
@@ -129,7 +131,10 @@
     }
 
     @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child) {display: none;}
+      .topnav a:not(:first-child) {
+        display: none;
+      }
+
       .topnav a.icon {
         float: right;
         display: block;
@@ -137,12 +142,16 @@
     }
 
     @media screen and (max-width: 600px) {
-      .topnav.responsive {position: relative;}
+      .topnav.responsive {
+        position: relative;
+      }
+
       .topnav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
       }
+
       .topnav.responsive a {
         float: none;
         display: block;
@@ -151,13 +160,17 @@
     }
 
     ul {
-      position: -webkit-sticky; /* Safari */ /* sticky nav bar */
+      position: -webkit-sticky;
+      /* Safari */
+      /* sticky nav bar */
       position: sticky;
       top: 0;
     }
-    		.main {
-    			margin-top: 30px; /*add top margin to avoid content overlay */
-    		}
+
+    .main {
+      margin-top: 30px;
+      /*add top margin to avoid content overlay */
+    }
   </style>
 
 
@@ -168,28 +181,32 @@
   <main>
 
     <header>
-       <div class="container">
-        <img src="img/UXHoneycomb@72.png" alt="logo" class="logo"><!--gotta fix this-->
-    <div class="topnav" id="myTopnav">
-      <a href="#contact">Contact</a>
-      <a href="#about.html">About</a>
-      <a href="#my work">My Work</a>
-    <a href="#home" class="active">Home</a>
+      <div class="container">
+        <img src="img/UXHoneycomb@72.png" alt="logo" class="logo">
+        <!--gotta fix this-->
+        <div class="topnav" id="myTopnav">
+          <a href="#contact">Contact</a>
+          <a href="#about.html">About</a>
+          <a href="#my work">My Work</a>
+          <a href="#home" class="active">Home</a>
 
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-      </a>
-    </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
       </div>
     </header>
 
 
-    <div id="hero"><!--hero-->
-      <div class="container"><!--yellow-->
+    <div id="hero">
+      <!--hero-->
+      <div class="container">
+        <!--yellow-->
         <h1> Hi, my name is Kristofer</h1>
-          <h2>I'm a naturally curious and intutive UX Designer from San Antonio</h2>
-          <p>I craft enjoyable experiences. </p><!--need something more-->
-       </div> <!-- close yellow -->
+        <h2>I'm a naturally curious and intutive UX Designer from San Antonio</h2>
+        <p>I craft enjoyable experiences. </p>
+        <!--need something more-->
+      </div> <!-- close yellow -->
     </div> <!-- close hero -->
 
     <div id="work">
@@ -222,12 +239,15 @@
 
             <h3>BeerWhiz! Case Study</h3><!-- heading for the project -->
 
-              <p><!-- open paragraph -->
-                CareerFoundry course project. For this project I took on the expert app challenge to explore the need for expert advice built into an app that gives users a simple, intuitive means to connect with an expert in a given field within moments so they can feel more informed and equally prepared to take on what ever problem presents itself in the task at hand.
-             </p><!-- end paragraph -->
-             <p>
-               My solution was BeerWhiz! A mobile app designed for all homebrewers, novice through expert, to connect on a social lever, albeit remote. The app is designed as a place for craft beer lovers and homebrewing enthusiasts to connect remotely to share and compare recipes, techniques, and give/get homebrewing advice.
-             </p>
+            <p>
+              <!-- open paragraph -->
+              CareerFoundry course project. For this project I took on the expert app challenge to explore the need for expert advice built into an app that gives users a simple, intuitive means to connect with an expert in a given field within
+              moments so they can feel more informed and equally prepared to take on what ever problem presents itself in the task at hand.
+            </p><!-- end paragraph -->
+            <p>
+              My solution was BeerWhiz! A mobile app designed for all homebrewers, novice through expert, to connect on a social lever, albeit remote. The app is designed as a place for craft beer lovers and homebrewing enthusiasts to connect
+              remotely to share and compare recipes, techniques, and give/get homebrewing advice.
+            </p>
             <a href="beerwhiz.html" class="button">Read more</a><!-- button or link label -->
 
           </div>
@@ -371,7 +391,7 @@
 
   </main>
 
-<!--took out js for nav navbar-->
+  <!--took out js for nav navbar-->
 </body>
 
 </html>
