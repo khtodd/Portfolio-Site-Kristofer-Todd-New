@@ -14,11 +14,15 @@ img {
   width: 100%;
 }
 
+/* is this in the right spot? */
 header {
-  background-color: #ffe4c4;
+  background-color: #ffffff;
   padding: 10px;
   margin: 10px 0;
   text-align: center;
+  selector {
+    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  }
 }
 
 .container {
@@ -87,6 +91,8 @@ header {
   display: none;
 }
 
+/* is going to interfere with what we are doing in task 1.8? */
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -142,11 +148,14 @@ ul {
   text-align: center;
 }
 
+#hero span {
+  display: block;
+}
+
 #hero p {
   margin: 0;
   padding: 0;
 }
-
 
 #hero {
   background-color: #ffe4c4;
@@ -161,6 +170,8 @@ ul {
   width: 100%;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 }
+
+
 
 body {
   background-color: #fbfefb;
@@ -265,4 +276,63 @@ main {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+}
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+}
+
+nav {
+  width: auto;
+  float: right;
+  margin-top: 4px;
+}
+.col-md-6 {
+  width: 50%;
+}
+[class*="col-"] {
+  float: left;
+}
+.row::after {   /* is this where it's supposed to be? */
+  content: "";
+  clear: both;
+  display: table;
+}
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+}
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
