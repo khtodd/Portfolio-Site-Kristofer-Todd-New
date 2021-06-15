@@ -244,14 +244,13 @@ a:focus {
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #424453;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
-}
-
-.button:hover {
+  transition-duration: 0.2s opacity;
+ .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
