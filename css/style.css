@@ -126,7 +126,7 @@ ul {
 
 /* Hero */
 #hero h1 {
-  text-align: center;
+  text-align: left;
   /* Centers text */
 }
 
@@ -136,7 +136,7 @@ ul {
 }
 
 #hero h2 {
-  text-align: center;
+  text-align: left; 
 }
 
 #hero h2 {
@@ -145,7 +145,7 @@ ul {
 }
 
 #hero p {
-  text-align: center;
+  text-align: left;
 }
 
 #hero span {
@@ -158,20 +158,22 @@ ul {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #f9f8fc;
   padding: 20px 0;
 }
 
 #hero {
   position: relative;
-  background-color: #ffe4c4;
+  background-color: #f9f8fc;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 }
 
-
+.hero-image {
+  
+}
 
 body {
   background-color: #fbfefb;
