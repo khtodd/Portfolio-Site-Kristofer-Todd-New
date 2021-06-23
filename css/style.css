@@ -10,9 +10,9 @@ Link Color (Dark Blue):#424453;
   box-sizing: border-box;
 }
 
-img {
+/*img {
   width: 100%;
-}
+}*/
 
 /* is this in the right spot? */
 header {
@@ -46,24 +46,18 @@ header {
 
 /* fixed navigation bar */
 .topnav {
-		overflow: hidden;
+		/*overflow: hidden;*/
 		background-color: #ffffff;
 		position: fixed;
 		top: 0;
 		width: 100%;
 		}
+
 /* links inside the navbar */
-		.topnav a {float:right;
-		display: block;
-		color: #424453;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none
-		}
 
 
 .topnav {
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #ffffff;
 }
 
@@ -77,6 +71,7 @@ header {
   font-size: 17px;
 }
 
+/* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -157,10 +152,7 @@ ul {
   padding: 0;
 }
 
-#hero {
-  background-color: #f9f8fc;
-  padding: 20px 0;
-}
+
 
 #hero {
   position: relative;
@@ -171,9 +163,6 @@ ul {
   box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 }
 
-.hero-image {
-  
-}
 
 body {
   background-color: #fbfefb;
@@ -252,6 +241,8 @@ a:focus {
   border-bottom: 2px solid #424453;
   /* width of the border, type, color */
   transition-duration: 0.2s opacity;
+}
+
  .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
@@ -279,11 +270,13 @@ main {
   border-bottom: 1px solid #4a4a4a;
 }
 
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-}
+
 header {
   text-align: unset;
   padding: 20px 0 13px;
@@ -307,13 +300,16 @@ nav {
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
 .col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
+.col-6 {width: 60%;}
+.col-7 {width: 40%;}
 .col-8 {width: 66.66%;}
 .col-9 {width: 75%;}
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+}
+
+
 
 /* is this where it's supposed to be? */
 .row::after {   
@@ -327,29 +323,44 @@ nav {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 60%;}
+.col-7 {width: 40%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 }
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
 }
 /* ==============================
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-}
+
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
 }

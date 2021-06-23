@@ -78,58 +78,7 @@
       text-decoration: underline;
     }
 
-    /* fixed navigation bar */
-    /* does this need to go in my css */
-    .topnav {
-      overflow: hidden;
-      background-color: #ffffff;
-      position: fixed;
-      top: 0;
-      width: 100%;
-    }
 
-    /* links inside the navbar */
-    .topnav a {
-      float: right;
-      display: block;
-      color: #424453;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none
-    }
-
-
-    .topnav {
-      overflow: hidden;
-      background-color: #ffffff;
-    }
-
-    .topnav a {
-      float: right;
-      display: block;
-      color: #424453;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    /* Change the color of links on hover */
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-
-
-    .topnav a.active {
-      background-color: #424453;
-      color: white;
-    }
-
-    .topnav .icon {
-      display: none;
-    }
 
     @media screen and (max-width: 600px) {
       .topnav a:not(:first-child) {
@@ -268,6 +217,7 @@
           <div class="column col-md-6 col-lg-7">
             <!--Teal-->
             <!-- open first column (used for image) -->
+            <!-- Fix this image-->
             <picture>
               <source srcset="img/BeerWhiz/" media="(max-width:767)">
               <img src="img/Project 2/WireframeMD.png" alt="Coming Soon">
@@ -360,8 +310,8 @@
           <!--Social Media Layout and Placeholders-->
           <a href="https://www.linkedin.com/in/kristofer-todd-07b45213/" target="_blank">
 
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1"
-              viewBox="0 0 512 512" width="100%" xml:space="preserve">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink" height="72" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1"
+              viewBox="0 0 512 512" width="72" xml:space="preserve">
               <g id="g5891">
                 <path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;" />
                 <g id="shapes">
@@ -395,6 +345,17 @@
   </main>
 
   <!--took out js for nav navbar-->
+  <!--leave at the bottom-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 
 </html>
