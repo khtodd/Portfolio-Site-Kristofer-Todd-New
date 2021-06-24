@@ -79,36 +79,6 @@
     }
 
 
-
-    @media screen and (max-width: 600px) {
-      .topnav a:not(:first-child) {
-        display: none;
-      }
-
-      .topnav a.icon {
-        float: right;
-        display: block;
-      }
-    }
-
-    @media screen and (max-width: 600px) {
-      .topnav.responsive {
-        position: relative;
-      }
-
-      .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-
-      .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-    }
-
     ul {
       position: -webkit-sticky;
       /* Safari */
@@ -131,17 +101,14 @@
   <main>
 
     <header>
-      <div class="container">
-        <img src="img/KT.png" alt="logo" class="logo">
-        <!--gotta fix this-->
-        <div class="topnav" id="myTopnav">
+      <div class="container"> 
+       <div class="topnav" id="myTopnav"><!--gotta fix this-->
+          <img src="img/KToddUX.png" alt="logo" class="logo">
           <a href="#contact">Contact</a>
           <a href="#about.html">About</a>
-          <a href="#mywork">My Work</a>
-          <a href="#home" class="active">Home</a>
+          <a href="#mywork" class="active">My Work</a>
 
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><!--do i need to remove this-->
-            <i class="fa fa-bars"></i>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
           </a>
         </div>
       </div>
@@ -164,24 +131,13 @@
     
 
     <div id="work">
-      <!-- work section -->
-      <!--orange section-->
-
       <div class="container">
-        <!--yellow container-->
-
-        <h2> My Work</h2> <!-- is this where it is supposed to be?-->
-
-        <div class="row">
-          <!--Green-->
-          <!-- open row that holds (2) columns for project -->
-
-          <div class="column col-md-6 col-lg-7">
-            <!--Teal-->
-            <!-- open first column (used for image) -->
+      <h2> My Work</h2> <!-- is this where it is supposed to be?-->
+      <div class="row"> <!-- open row that holds (2) columns for project -->
+      <div class="column col-md-6 col-lg-7">
             <picture>
-              <source scrset="img/BeerWhiz/BeerWhiz.png" media="(max-width:767px)">
-              <img src="img/BeerWhiz/BeerWhiz@2x.png" alt="BeerWhiz! Case Study">
+              <source scrset="img/BeerWhiz/BeerWhiz@1jpg" media="(max-width:767px)">
+              <img src="img/BeerWhiz/BeerWhiz@2.jpg" alt="BeerWhiz! Case Study">
             </picture>
           </div>
           <!--Teal-->
@@ -192,13 +148,8 @@
               <h3>BeerWhiz! Case Study</h3><!-- heading for the project -->
 
             <p>
-              <!-- open paragraph -->
               CareerFoundry course project. For this project I took on the expert app challenge to explore the need for expert advice built into an app that gives users a simple, intuitive means to connect with an expert in a given field within
               moments so they can feel more informed and equally prepared to take on what ever problem presents itself in the task at hand.
-            </p><!-- end paragraph -->
-            <p>
-              My solution was BeerWhiz! A mobile app designed for all homebrewers, novice through expert, to connect on a social lever, albeit remote. The app is designed as a place for craft beer lovers and homebrewing enthusiasts to connect
-              remotely to share and compare recipes, techniques, and give/get homebrewing advice.
             </p>
             <a href="beerwhiz.html" class="button">Read more</a><!-- button or link label -->
 
@@ -217,12 +168,12 @@
           <div class="column col-md-6 col-lg-7">
             <!--Teal-->
             <!-- open first column (used for image) -->
-            <!-- Fix this image-->
+          
             <picture>
-              <source srcset="img/BeerWhiz/" media="(max-width:767)">
-              <img src="img/Project 2/WireframeMD.png" alt="Coming Soon">
-
+              <source srcset="img/ReadingCircle/ReadingCircle@1.jpg" media="(max-width:767)">
+              <img src="img/ReadingCircle/ReadingCircle@2.jpg" alt="Coming Soon">
             </picture>
+
           </div>
           <!--Teal-->
           <!-- end first column -->

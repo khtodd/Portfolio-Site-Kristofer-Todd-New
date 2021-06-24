@@ -5,33 +5,36 @@ Secondary Color (): #;
 Font Color (Dark Blue): #424453;
 Link Color (Dark Blue):#424453;
 */
-/* Layout styling */
+
 * {
   box-sizing: border-box;
 }
 
-/*img {
+img {
   width: 100%;
-}*/
-
-/* is this in the right spot? */
-header {
-  background-color: #ffffff;
-  padding: 10px;
-  margin: 10px 0;
-  text-align: center;
-  selector {
-    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-  }
 }
 
+/* Header styling
+Box sahod not showing up 
+removed 10px from margin*/
+header {
+  background-color: #ffffff;
+  padding: 10px 0 0;
+  margin: 0 auto; 
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 5px 5px 0 #4a4a4a;
+ 
+}
+
+/* Layout styling */
 .container {
   padding: 0 15px;
 }
 
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;/* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
@@ -41,26 +44,16 @@ header {
 
 /* Navigation */
 .logo {
-  max-width: 250px;
+  max-width: 150px;
+  padding-top: 20px;
 }
 
-/* fixed navigation bar */
 .topnav {
-		/*overflow: hidden;*/
-		background-color: #ffffff;
-		position: fixed;
-		top: 0;
-		width: 100%;
-		}
-
-/* links inside the navbar */
-
-
-.topnav {
-  /*overflow: hidden;*/
   background-color: #ffffff;
+  overflow: hidden;
 }
 
+/* Style the links inside the navigation bar */
 .topnav a {
   float: right;
   display: block;
@@ -120,9 +113,9 @@ ul {
 		}
 
 /* Hero */
+/* Left align text */
 #hero h1 {
   text-align: left;
-  /* Centers text */
 }
 
 #hero h1 {
@@ -160,7 +153,6 @@ ul {
   padding: 20px 0;
   display: inline-block;
   width: 100%;
-  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75)
 }
 
 
@@ -260,9 +252,9 @@ a:focus {
   background-color: #424453;
   color: #ffffff;
 }
-
+/*why was it at 133px??*/
 main {
-  padding-top: 133px
+  padding-top: 0px
 }
 
 #work .row {
@@ -293,8 +285,15 @@ nav {
 /* is this where it's supposed to be? Added 6/22*/
 [class*="col-"] {
   float: left;
-  padding:;
+  padding: 10px;
 }
+/* is this where it's supposed to be? */
+.row::after {   
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -310,14 +309,6 @@ nav {
 }
 
 
-
-/* is this where it's supposed to be? */
-.row::after {   
-  content: "";
-  clear: both;
-  display: table;
-}
-}
 
 /* ==============================
 Large devices (1024px or larger)
