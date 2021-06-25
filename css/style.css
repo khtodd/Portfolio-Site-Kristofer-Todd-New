@@ -46,6 +46,7 @@ header {
 .logo {
   max-width: 150px;
   padding-top: 20px;
+  display: inline-block;
 }
 
 .topnav {
@@ -103,6 +104,17 @@ header {
   }
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 ul {
   position: -webkit-sticky; /* Safari */ /* sticky nav bar */
   position: sticky;
@@ -113,9 +125,9 @@ ul {
 		}
 
 /* Hero */
-/* Left align text */
+/* center align text */
 #hero h1 {
-  text-align: left;
+  text-align: center;
 }
 
 #hero h1 {
@@ -124,7 +136,7 @@ ul {
 }
 
 #hero h2 {
-  text-align: left; 
+  text-align: center; 
 }
 
 #hero h2 {
@@ -133,7 +145,7 @@ ul {
 }
 
 #hero p {
-  text-align: left;
+  text-align: center;
 }
 
 #hero span {
