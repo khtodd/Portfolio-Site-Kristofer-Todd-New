@@ -20,7 +20,7 @@
        <div class="topnav" id="myTopnav"><!--gotta fix this-->
           <img src="img/KToddUX.png" alt="logo" class="logo">
           <a href="#contact">Contact</a>
-          <a href="#about.html">About</a>
+          <a href="#about.html"class="active">About</a>
           <a href="#index.html">My Work</a>
 
           <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i>
@@ -28,6 +28,7 @@
         </div>
       </div>
     </header>
+
     <main>
     <div class="container"><!--orange section 1--><!--About section-->
       <div class="row"><!--yellow section 1-->
@@ -37,8 +38,9 @@
       </div><!--yellow section 1 close-->
     </div><!--orange section 1 close-->
 
-    <div class="column col-md-6 col-lg-7"><!--is this div class in the right div? orange section 2-->
-      <div><!--yellow section 2-->
+
+    <div class="container"><!--is this div class in the right div? orange section 2-->
+      <div class= "container"><!--yellow section 2-->
         <picture><!--fix this-->
           <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
           <img src="http://via.placeholder.com/1200x800" alt="My Image">
@@ -61,18 +63,18 @@
               <!--2nd paragraph-->
             </p>
 			  
-            <a href="files/kristofertodd_resume.pdf" target="_blank">Download my Resume</a>
+            <a href="files/kristofertodd_resume.pdf" class="button" target="_blank">Download my Resume</a>
 
           </div> <!-- teal column close-->
           
-          <div class="row"><!--is this correct??-->
+          <div class="col-md-6 col-lg-7"><!--is this correct??-->
             <!--teal column 2 Skills and Tools-->
             <h2>
               Skills & Tools
             </h2>
             <div>
               <!--green section 2 Relevant Skills-->
-              <div class="col-md-6">
+              <div class="column col-md-6 col-lg-5">
                 <!--teal column 1-->
                 <h3>
                   Relevant Skills
@@ -91,7 +93,7 @@
               </div>
               <!--teal column 1 close-->
 
-              <div class="col-md-6">
+              <div class="column col-md-6 col-lg-5">
                 <!--teal column 2-->
                 <h3>
                   Tools I use
@@ -127,7 +129,7 @@
           <p>
             Feel free to drop me a line.
           </p>
-          <div>
+          <div class="subrow">
             <a href="mailto:kristofertodd@yahoo.com">Email me</a>
           </div>
           <div>
@@ -165,8 +167,20 @@
           <p>Copyright Kristofer Todd 2021</p>
         </div>
       </footer>
+
   </main><!--either I have too many divs or not enough-->
 
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 </body>
 
 </html>
